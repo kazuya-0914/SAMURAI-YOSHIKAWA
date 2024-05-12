@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.board {
+	display: grid;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+	position: relative;
+	width: 440px;
+	margin: 20px 20px 10px 20px;
+	padding:20px;
+	background: #000;
+}
+.board div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: green;
+	border: 1px solid #ccc;
+	font-size: 30px;
+}
+.text_msg{
+	text-align: center;
+	width: 440px;
+	margin: 0px 20px 10px 20px;
+	border: 1px solid #000;
+	padding:10px 0px;
+}
+
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 440px;
+	margin-left: 20px;
+}
+.btn input {
+	width: 120px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ブロック崩し</title>
+<style>
+*{
+	box-sizing: border-box;
+}
+canvas {
+	background: black;
+	background: #ccc;
+	margin-bottom: 10px;
+}
+.text_msg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 600px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 600px;
+}
+.btn input {
+	width: 120px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}
+.btn input.stop {
+	display: none;
+}
+
+</style>
+<!-- <link href="css/block.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+<header>
+<p>■ ブロック崩し ■</p>
+</header>
+
+<!--
+<div id="canvas">
+  <div id="racket"></div>
+  <div id="ball"></div>
+</div>
+-->
+<canvas id="canvas" width="600px" height="600px">
+</canvas>
+
+<section class="text_msg">
+スタートボタンを押してください
+</section>
+
+<section class="btn">
+  <div class="speed_select">
+  速度
+  <select name="speed" class="speed">
+    <option value="fast">速い</option>
+    <option value="usually" selected>普通</option>
+    <option value="slow">遅い</option>
+  </select>
+  </div>
+  <input name="start" type="button" value="スタート" class="start">
+  <input name="stop" type="button" value="ポーズ" class="stop">
+  <input name="reset" type="button" value="リセット" class="reset" onclick="location.href='./block.html'">
+</section>
+
+<footer>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/block.js"></script>
+
+</body>
+</html>
